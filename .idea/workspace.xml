@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b67cd0c-4431-4d3f-b038-ea36dd3e7eea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="3b67cd0c-4431-4d3f-b038-ea36dd3e7eea" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +80,7 @@
       <workItem from="1721970076861" duration="323000" />
       <workItem from="1721970406091" duration="296000" />
       <workItem from="1721970791289" duration="51000" />
-      <workItem from="1721970870931" duration="1102000" />
+      <workItem from="1721970870931" duration="1610000" />
     </task>
     <task id="LOCAL-00001" summary="Django API 2">
       <option name="closed" value="true" />
@@ -100,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721971430981</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Django API 3">
+      <option name="closed" value="true" />
+      <created>1721971989335</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721971989335</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Django API 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Django API 2" />
+    <MESSAGE value="Django API 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Django API 3" />
   </component>
 </project>
