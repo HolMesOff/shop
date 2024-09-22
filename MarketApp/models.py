@@ -13,6 +13,7 @@ class Order(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.IntegerField()
     order_date = models.DateTimeField(auto_now_add=True)
+    in_create = models.BooleanField(auto_created=True)
 
     def __str__(self):
         return f"Order of {self.quantity} {self.product.name}(s)"
