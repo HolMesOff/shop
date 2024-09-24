@@ -1,15 +1,8 @@
 from django.http import HttpResponse
-from rest_framework import viewsets
-from .models import Product, Order
-from .serializers import ProductSerializer, OrderSerializer
+from rest_framework import viewsets, generics
+from .models import Category
+from .serializers import CategorySerializer
 
-class ProductViewSet(viewsets.ModelViewSet):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
-
-class OrderViewSet(viewsets.ModelViewSet):
-    queryset = Order.objects.all()
-    serializer_class = OrderSerializer
-
-def Hello(request):
-    return HttpResponse("<h1>Heelo</h1>")
+class CategoryListView(generics.ListAPIView):
+    queryset = Category.objects.filter(parent__isnull=True)
+    serializer_class = CategorySerializer

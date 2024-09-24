@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3b67cd0c-4431-4d3f-b038-ea36dd3e7eea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Market/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarketApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketApp/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MarketApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketApp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarketApp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketApp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarketApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +40,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/HolMes/repository1/venv/Scripts/python.exe&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -85,7 +91,8 @@
       <workItem from="1721970791289" duration="51000" />
       <workItem from="1721970870931" duration="2657000" />
       <workItem from="1725254400143" duration="200000" />
-      <workItem from="1727015285351" duration="115000" />
+      <workItem from="1727015285351" duration="434000" />
+      <workItem from="1727148736499" duration="707000" />
     </task>
     <task id="LOCAL-00001" summary="Django API 2">
       <option name="closed" value="true" />
@@ -135,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721972912252</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Django API 3.1">
+      <option name="closed" value="true" />
+      <created>1727015469140</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727015469140</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
