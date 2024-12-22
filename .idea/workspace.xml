@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b67cd0c-4431-4d3f-b038-ea36dd3e7eea" name="Changes" comment="Django API 3.1" />
+    <list default="true" id="3b67cd0c-4431-4d3f-b038-ea36dd3e7eea" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Market/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Market/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarketApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketApp/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +92,16 @@
       <workItem from="1727148736499" duration="5567000" />
       <workItem from="1727668831130" duration="138000" />
       <workItem from="1727668998967" duration="271000" />
-      <workItem from="1728298723299" duration="381000" />
+      <workItem from="1728298723299" duration="1031000" />
+      <workItem from="1728730693805" duration="10000" />
+      <workItem from="1728977647545" duration="601000" />
+      <workItem from="1730870185187" duration="34000" />
+      <workItem from="1732114989253" duration="52000" />
+      <workItem from="1732161507304" duration="3000" />
+      <workItem from="1733372718643" duration="1266000" />
+      <workItem from="1733806713488" duration="1721000" />
+      <workItem from="1734065003146" duration="669000" />
+      <workItem from="1734853903373" duration="918000" />
     </task>
     <task id="LOCAL-00001" summary="Django API 2">
       <option name="closed" value="true" />
@@ -185,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728298995018</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Django API 3.1">
+      <option name="closed" value="true" />
+      <created>1728299161714</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728299161714</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
