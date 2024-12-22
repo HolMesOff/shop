@@ -7,8 +7,7 @@
     <list default="true" id="3b67cd0c-4431-4d3f-b038-ea36dd3e7eea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Market/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Market/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +56,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="Market.settings" />
       </envs>
-      <option name="SDK_HOME" value="C:\OEM\django\djvenv\Scripts\python.exe" />
-      <option name="SDK_NAME" value="Python 3.12 (django)" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -101,7 +99,7 @@
       <workItem from="1733372718643" duration="1266000" />
       <workItem from="1733806713488" duration="1721000" />
       <workItem from="1734065003146" duration="669000" />
-      <workItem from="1734853903373" duration="918000" />
+      <workItem from="1734853903373" duration="1662000" />
     </task>
     <task id="LOCAL-00001" summary="Django API 2">
       <option name="closed" value="true" />
@@ -207,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728299161714</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Django API 3.1">
+      <option name="closed" value="true" />
+      <created>1734854845436</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1734854845436</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
