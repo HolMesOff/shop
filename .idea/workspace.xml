@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b67cd0c-4431-4d3f-b038-ea36dd3e7eea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-6.8.2.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-6.8.2.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-6.8.2.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-6.8.2.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-6.8.2.dist-info/REQUESTED" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-6.8.2.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise-6.8.2.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/compress.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/media_types.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/middleware.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/responders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/runserver_nostatic/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/runserver_nostatic/management/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/runserver_nostatic/management/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/runserver_nostatic/management/commands/runserver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/whitenoise/string_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/migrations/0006_product.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Market/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarketApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketApp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarketApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketApp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarketApp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketApp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarketApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +109,7 @@
       <workItem from="1734943969873" duration="334000" />
       <workItem from="1734946908242" duration="1192000" />
       <workItem from="1734964192773" duration="1891000" />
+      <workItem from="1735011812514" duration="1775000" />
     </task>
     <task id="LOCAL-00001" summary="Django API 2">
       <option name="closed" value="true" />
@@ -242,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734855599385</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Django API 3.1">
+      <option name="closed" value="true" />
+      <created>1735011981404</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1735011981404</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
