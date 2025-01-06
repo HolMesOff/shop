@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b67cd0c-4431-4d3f-b038-ea36dd3e7eea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MarketApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketApp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +108,7 @@
       <workItem from="1735620347993" duration="6496000" />
       <workItem from="1736052173516" duration="1097000" />
       <workItem from="1736061110790" duration="3738000" />
-      <workItem from="1736140748039" duration="2774000" />
+      <workItem from="1736140748039" duration="3049000" />
     </task>
     <task id="LOCAL-00001" summary="Django API 2">
       <option name="closed" value="true" />
@@ -279,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736142547360</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Django API 3.1">
+      <option name="closed" value="true" />
+      <created>1736143678272</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736143678272</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
