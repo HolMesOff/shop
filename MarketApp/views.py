@@ -66,7 +66,8 @@ class CheckEmailView(APIView):
         if user_exists:
             return Response({"message": "User exists"}, status=status.HTTP_200_OK)
         else:
-            return Response({"message": "User does not exist"}, status=status.HTTP_404_NOT_FOUND)
+            return Response({"message": "User does not exist"}, status=status.HTTP_400_BAD_REQUEST)
+
 
 # Регистрация
 class RegisterView(APIView):
