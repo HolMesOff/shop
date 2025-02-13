@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from rest_framework import generics, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -25,9 +26,7 @@ class ProductListView(generics.ListAPIView):
 
     def get_queryset(self):
         parent_id = self.kwargs['parent_id']
-        # Фильтруем категории, в которых родительский элемент соответствует заданному parent_id
         categories = Category.objects.filter(id=parent_id) | Category.objects.filter(parent__id=parent_id)
-        # Ищем товары, которые принадлежат этим категориям
         return Product.objects.filter(parent__in=categories)
 
 
@@ -39,7 +38,6 @@ class ProductSearchView(APIView):
         query = request.query_params.get('query', '').strip()
 
         if query:
-            # Преобразуем запрос в нижний регистр
             query_lower = query.lower()
 
             # Фильтрация товаров с использованием регулярных выражений для игнорирования регистра

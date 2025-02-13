@@ -1,0 +1,38 @@
+
+{% extends 'layout/basic.html' %}
+{% load static %}
+
+{% block title %} Профиль {% endblock %}
+{% block header %} <h1>Профиль</h1> {% endblock %}
+{% block content %}
+			<div class="auth">
+			</div>
+			<div class="noauth" style="position:relative;top:30%;">
+				<center>
+					<h4>Войдите или зарегистрируйтесь, чтобы видеть историю заказов, пользоваться бонусными баллами и многое другое.</h4><br>
+					<div id="authorization" onclick="loadPage('template_register')">
+						<p>Войти / Зарегистрироваться</p>
+					</div>
+					<div id="listauth">
+						<div onclick="openModal('1')">
+							<img src="{% static 'MarketApp/img/SP.png' %}">
+							<h2>Служба поддержки</h2>
+						</div>
+						<div onclick="openModal('2')">
+							<img src="{% static 'MarketApp/img/faq.png' %}">
+							<h2>Вопросы и ответы</h2>
+						</div>
+						<div onclick="openModal('3')">
+							<img src="{% static 'MarketApp/img/about.png' %}">
+							<h2>О приложении</h2>
+						</div>
+					</div>
+				</center>
+			</div>
+
+			<div id="modal" class="modal noshow">
+				<span class="close" onclick="closeModal()">&times;</span>
+				<div id="modal-content"></div>
+			</div>
+{% endblock %}
+

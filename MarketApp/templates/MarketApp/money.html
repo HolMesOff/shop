@@ -1,0 +1,17 @@
+{% extends 'layout/basic.html' %}
+{% block title %} Корзина {% endblock %}
+{% block header %} <h1>Корзина</h1> {% endblock %}
+{% block content %}
+<div class="nofavorites" style="position:relative;top:20%;">
+                <center>
+                    <h1>В корзине пока пусто</h1><br>
+                    <h4>Воспользуйтесь поиском, чтобы найти все, что нужно, или перейдите в каталог.</h4><br>
+                    <h4>Мы бережно соберем, упакуем ваш заказ и наши вежливые курьеры доставят его в удобное для вас место и время.</h4><br>
+                    <h4>Минимальная сумма заказа - 4000 ₸.</h4>
+                    <h4>Бесплатная доставка от - 6000 ₸.</h4><br>
+                    <div id="backcatalog">
+                        <p>Перейти в каталог</p>
+                    </div>
+                </center>
+            </div>
+{% endblock %}

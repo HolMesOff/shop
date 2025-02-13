@@ -1,0 +1,66 @@
+{% extends 'layout/basic.html' %}
+{% block style %}
+    <style>
+    #dynamic-content {
+            display: none; /* Скрываем контент */
+        }
+        #loading {
+			position:relative;
+			color:red;
+			top:45%;
+            display: block;
+            text-align: center;
+			justify-content:center;
+            font-size: 1.5em;
+        }
+    </style>
+{% endblock %}
+{% block loading %} <div id="loading">Загрузка категорий...</div> {% endblock %}
+{% block content %}
+
+<div id="search">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Поиск товаров..."/>
+                    <button class="search-button" onclick="searchItems()" aria-label="Search">
+                        🔍
+                    </button>
+                </div>
+                <div class="search-results" id="search-results"></div>
+            </div>
+
+
+
+            <div id="address">
+                <p id="addr">Ваш адрес</p>
+                <p id="time">Ближайшая доставка сегодня с 10:00-12:00</p>
+            </div>
+
+            <div id="address-popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <h2>Выберите или введите новый адрес</h2>
+                    <div class="address-list" id="address-list">
+                    </div>
+                    <div class="new-address">
+                        <label for="new-address">Новый адрес:</label>
+                        <input type="text" id="new-address" placeholder="Введите новый адрес">
+                    </div>
+                    <button onclick="saveAddress()">Сохранить</button>
+                </div>
+            </div>
+
+            <div class="promo-container">
+                <button class="promo-button left" onclick="previousSlide()">&#9664;</button>
+                <div id="promo">
+                </div>
+                <button class="promo-button right" onclick="nextSlide()">&#9654;</button>
+            </div>
+
+            <div id="main2">
+                <!-- Здесь будут добавляться категории -->
+            </div>
+
+        </div>
+
+
+{% endblock %}

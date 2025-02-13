@@ -1,0 +1,923 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body p, body span, body div, body a, body h1, body h2, body h3, body h4, body h5, body h6 {
+    cursor: default !important; /* Используйте !important, чтобы переопределить другие стили */
+}
+
+
+html, body {
+	font-family: 'Arial';
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #f8f8f8;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    z-index: 10;
+}
+
+.header_register {
+    background-color: #f8f8f8;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    z-index: 10;
+}
+
+.header img, .header_register img {
+    height: 80%;
+    margin-right: 10px;
+}
+.header h1, .header_register h1{
+	font-size:36px;
+	color:#333;
+	font-weight:700;
+}
+
+.header h2, .header_register h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+
+/* Стиль для формы */
+#authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Стиль для лейблов */
+#authForm label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Стиль для полей ввода */
+#authForm input[type="email"],
+#authForm input[type="password"],
+#authForm input[type="date"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 8px;
+    transition: border-color 0.3s;
+}
+
+#authForm input[type="email"]:focus,
+#authForm input[type="password"]:focus,
+#authForm input[type="date"]:focus {
+    border-color: #F45357;
+    outline: none;
+}
+
+/* Стиль для кнопок */
+#authForm button {
+    padding: 12px;
+    background-color: #F50F64;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#authForm button:hover {
+    background-color: rgba(245, 15, 100, 0.8);
+}
+
+/* Стиль для кнопки "Проверить" */
+#checkEmailButton {
+    background-color: #F50F64;
+}
+
+#checkEmailButton:hover {
+    background-color: rgba(245, 15, 100, 0.8);
+}
+
+/* Стиль для поля email */
+#emailField {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.footer {
+    background-color: #f8f8f8;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px;
+    z-index: 10;
+}
+
+.footer div {
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footer div #circleborder{
+	width:40%;
+	height:90%;
+	border-radius:100px;
+}
+.footer div #circleborder:active{
+	background-color:rgba(0,0,0,0.3);
+	transition:0.1s;
+}
+
+.footer img {
+    max-height: 25%;
+    width: auto;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.footer h2 {
+    color: #BDADB2;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease;
+}
+
+
+.footer .active img {
+    filter: brightness(1.2); /* Эффект для активного изображения */
+}
+
+.footer .active h2 {
+    color: #FE0052; /* Red color */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    width: 100vw;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    overflow-y: auto;
+    padding: 20px;
+    /* Применяем flex для центрирования содержимого */
+    flex-shrink: 0;
+}
+
+#search {
+    width: 90vw;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #D2E6E6;
+    border: 2px solid #D2E6E6;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.search-input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.search-results {
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #D2E6E6;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.search-results div {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-results div:hover {
+    background-color: #f0f0f0;
+}
+
+
+.main {
+    scrollbar-width: none;
+}
+
+.search-results {
+    scrollbar-width: none;
+}
+
+#address {
+    width: 90vw;
+    cursor: pointer;
+}
+#address:active{
+	background-color:rgba(0,0,0,0.2);
+}
+
+#address p {
+    font-size: 18px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    box-sizing: border-box; /* Включает padding и border в ширину */
+}
+
+.new-address {
+    margin-top: 20px;
+}
+
+.new-address input {
+    width: 50%; /* Уменьшаем ширину на отступы */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Учитывает padding и border в ширину */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.address-list p {
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.promo-container {
+    position: relative;
+    width: 70vw; /* Ширина контейнера */
+    height: 30vh; /* Высота контейнера */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    flex-shrink: 0; /* Предотвращение сжатия */
+}
+
+#promo {
+    display: flex;
+    height: 100%; /* Высота контейнера */
+    width: 100%; /* Ширина контейнера */
+    transition: transform 0.5s ease-in-out;
+}
+
+.promo-image {
+    width: 90%; /* Ширина изображения равна ширине контейнера */
+    height: 100%; /* Высота изображения равна высоте контейнера */
+    object-fit: fill; /* Сохранение пропорций изображения */
+    flex-shrink: 0;
+    border-radius: 20px;
+    margin: 0 5%;
+}
+
+.promo-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+    font-size: 24px;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.promo-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.promo-button.left {
+    left: 10px;
+}
+
+.promo-button.right {
+    right: 10px;
+}
+
+#main2 {
+    width: 70vw;
+    height: 30vh;
+    margin-top: 40px;
+    display: flex; /* Используем flexbox */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    gap: 10px; /* Расстояние между элементами */
+}
+
+#main2_sub {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос строк */
+    gap: 10px; /* Расстояние между элементами */
+    width: 70vw; /* Ширина контейнера */
+    margin-top: 40px; /* Отступ сверху */
+    justify-content: center; /* Центрируем карточки по горизонтали */
+    align-items: flex-start; /* Выравниваем карточки по верхнему краю */
+}
+
+
+
+#main2_sub div h6 {
+    font-size: 14px; /* Уменьшаем размер шрифта */
+    line-height: 1.5; /* Корректируем межстрочный интервал */
+    padding: 5px; /* Уменьшаем отступы */
+    color: #333; /* Цвет текста */
+    margin: 0; /* Убираем отступы */
+    text-align: center; /* Центрируем текст */
+    font-weight: bold; /* Добавляем жирность текста */
+}
+
+#main2_sub div img {
+    height: 100%; /* Заполняем доступное пространство */
+    max-width: 100%; /* Максимальная ширина */
+    object-fit: cover; /* Обрезаем изображение для пропорциональности */
+    border-radius: 5px; /* Скругляем углы изображения */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+.img_cont {
+    height: 50px; /* Высота контейнера */
+    overflow: hidden; /* Скрываем избыточное содержимое */
+    display: flex; /* Используем Flexbox */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.whitewindow {
+	display: block;
+    cursor: pointer; /* Указатель мыши */
+    height: auto; /* Автоматическая высота */
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ddd; /* Цвет бордюра */
+    overflow: hidden; /* Скрываем лишнее содержимое */
+    width: calc(40% - 10px); /* Делаем карточки занимать половину строки */
+    box-sizing: border-box; /* Учитываем отступы в ширине */
+    display: flex; /* Используем Flexbox */
+    flex-direction: row; /* Расположение контента по горизонтали */
+    justify-content: space-between; /* Равномерное распределение содержимого */
+    align-items: center; /* Центрирование по вертикали */
+    border-radius: 10px; /* Скругляем углы */
+    background: #f9f9f9; /* Фон карточки */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для объема */
+    transition: transform 0.3s, box-shadow 0.3s; /* Плавные переходы */
+}
+.whitewindow.hide {
+	display: none;
+}
+
+.whitewindow:hover {
+    transform: translateY(-5px); /* Поднимаем карточку при наведении */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Усиливаем тень */
+}
+
+#subcategory-list {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 200px;
+}
+
+#subcategory-list .line {
+    width: 2px;
+    background: #ddd;
+    height: 100%;
+    margin-right: 10px;
+}
+
+
+
+
+.greywindow {
+    background: #ececec;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    height: 30vh;
+    justify-content: space-between;
+    overflow: hidden;
+    width: calc(33% - 10px); /* Размер каждой карточки: 20% ширины строки */
+    margin-bottom: 10px; /* Отступ снизу для расстояния между строками */
+    box-sizing: border-box; /* Учитывать отступы и границы в ширине элемента */
+}
+.greywindow:active{
+	background-color:#505050;
+}
+
+#main2 div h6 {
+    color: #2c2b2b;
+    font-size: 14px;
+    letter-spacing: -0.474299px;
+    line-height: 14px;
+    padding: 10px;
+    z-index: 2;
+}
+
+#main2 div img {
+    height: 100%;
+    max-width: 200px;
+    z-index: 1;
+}
+.noauth h4, .nofavorites h4, .noorders h4, .mainmodal h4{
+	font-size:18px;
+	font-weight:300;
+}
+
+
+
+#listauth {
+	width:100%;
+    background-color: #f8f8f8;
+    height: 100vh;
+	margin-top:30px;
+	display: flex;
+    flex-direction: column;
+}
+
+#listauth div {
+    width: 100%; /* Ширина элемента */
+    border: 1px solid #cccccc; /* Серые границы */
+    border-style: solid none solid none;
+    border-radius: 5px; /* Скругленные углы */
+    flex-direction: row; /* Ряд для изображения и текста */
+    padding: 20px 0;
+    align-items: center; /* Выравнивание по центру по вертикали */
+    display: flex; /* Изменяем на flex */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+}
+
+#listauth div img {
+    max-height: 4vh; /* Максимальная высота изображения */
+    width: auto; /* Автоматическая ширина */
+    margin-right: 10px; /* Отступ справа от изображения */
+}
+
+#listauth div h2 {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+
+#backcatalog, #authorization{
+	height:5vh;
+	background-color:#F50F64;
+	color:white;
+	border-radius:10px;
+}
+#backcatalog p, #authorization p{
+	font-size:18px;
+	top:25%;
+	position:relative;
+	left:0vw;
+}
+#backcatalog:active, #authorization:active{
+	background-color:rgba(245, 15, 100, 0.8);
+}
+
+
+/* Добавляем плавную анимацию */
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.mainmodal {
+	position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content:center;
+    width: 100vw;
+	height:45vh;
+    overflow-y: auto;
+	left:0;
+}
+.headermodal {
+	height:10vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+	left:10px;
+    z-index: 10;
+}
+
+.headermodal h1{
+	font-size:36px;
+	color:#333;
+	font-weight:700;
+}
+.headermainmodel {
+    height: 10vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    padding: 0 10px;
+    z-index: 10;
+}
+
+.headermainmodel img {
+    height: 100%;
+    margin-right: 10px;
+}
+/* Стили для модального окна */
+.modal {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50%; /* Высота окна (от нижней части до центра экрана) */
+    background-color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 1; /* Начальное состояние для исчезания */
+    visibility: visible; /* Скрыто по умолчанию */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Плавные переходы для opacity и transform */
+    transform: translateY(100%); /* Начальное положение для исчезания */
+}
+
+.modal.show {
+    opacity: 1; /* Сделать модальное окно полностью видимым */
+    visibility: visible; /* Показать модальное окно */
+    transform: translateY(0); /* Переместить модальное окно на исходное место */
+}
+
+.modal.hide {
+    transform: translateY(100%); /* Переместить модальное окно вниз */
+}
+
+#modal-content {
+    width: 100%; /* Занимает всю ширину модального окна */
+    height: 100%; /* Занимает всю высоту модального окна */
+    position: relative;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 48px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#rating{
+	padding:10px 0;
+}
+
+.like {
+    width: 50px; /* Ширина изображения */
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#review-btn {
+    margin-top: 20px;
+}
+
+button#submit-review {
+	font-size:20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: red;
+    border: 4px solid red;
+	border-radius: 10px;
+    cursor: pointer;
+}
+
+button#submit-review:hover {
+    background-color: red;
+    color: white;
+    border: 4px solid white;
+}
+#goBack{
+	width:2vw;
+	height:3vh;
+}
+#goBack:active{
+	width:2vw;
+	height:3vh;
+	border-radius:20px;
+	background-color:rgba(245, 15, 100, 0.8);
+}
+
+
+/* Основной контейнер для списка товаров */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+/* Стили для каждой карточки товара */
+.product-card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* При наведении на карточку товара добавляем эффект */
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Контейнер для изображения */
+.img-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Изображение товара */
+.img-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Информация о товаре */
+.product-info {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Стили для названия и цены */
+.product-info h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Стили для цены и веса/количества */
+.product-info .price {
+    font-size: 1rem;
+    color: green;
+    margin-bottom: 5px;
+}
+
+.product-info .weight {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+
+
+.subcategory-panel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; /* Отключаем прокрутку, чтобы использовать кнопки для навигации */
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень для панели */
+    max-width: 80%;
+}
+
+.subcategory-panel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.subcategory-panel div {
+    padding: 10px 20px;
+    margin: 0 30px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #ffffff; /* Белый фон для категорий */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Анимация фона и тени */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для категорий */
+}
+
+.subcategory-panel div.selected {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Тень для выбранной категории */
+}
+
+.subcategory-panel div:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15); /* Легкая тень при наведении */
+}
+
+.scroll-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для кнопок */
+}
+
+.scroll-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
+
+#scroll-left {
+    margin-right: 30px;
+}
+
+#scroll-right {
+    margin-left: 30px;
+}
+
+
+/* Стили для скрытого описания товара */
+/* Стили для модального окна */
+.modal2 {
+    display: none; /* Скрываем окно по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Лёгкое затемнение фона */
+}
+
+.modal2-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.modal2-content img {
+    width: 100%;
+    object-fit: cover; /* Подгон изображения по содержимому */
+    margin-bottom: 20px; /* Отступ снизу */
+    border-radius: 8px; /* Лёгкие закругления */
+}
+
+.modal2-title {
+    font-size: 1.8rem; /* Размер шрифта для названия */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal2-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem; /* Размер текста для веса и цены */
+    color: #555;
+}
+
+.modal2-description {
+    font-size: 1rem; /* Обычный размер текста для описания */
+    line-height: 1.5; /* Удобочитаемый интерлиньяж */
+    color: #333;
+}
+
+.close2 {
+    color: #aaa;
+    float: right;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

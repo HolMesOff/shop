@@ -1,0 +1,36 @@
+{% extends 'layout/basic.html' %}
+{% block content %}
+<center>
+	            <!-- Панель категорий с кнопками для прокрутки -->
+	            <div class="subcategory-panel-container">
+	                <button class="scroll-btn" id="scroll-left" onclick="scrollCategories('left')">←</button>
+	                <div id="subcategory-panel" class="subcategory-panel">
+	                    <!-- Сюда будет выводиться список всех подкатегорий -->
+	                </div>
+	                <button class="scroll-btn" id="scroll-right" onclick="scrollCategories('right')">→</button>
+	            </div>
+
+	            <div id="main2_sub"></div>
+	            <div id="product-modal" class="modal2">
+				    <div class="modal2-content">
+				        <span class="close2">&times;</span>
+				        <img id="modal-product-image" src="" alt="Product Image">
+				        <h3 id="modal-product-title" class="modal2-title"></h3>
+				        <div class="modal2-details">
+				            <p id="modal-product-weight-price"></p>
+				        </div>
+				        <p id="modal-product-description" class="modal2-description"></p>
+				    </div>
+				</div>
+
+
+	        </center>
+{% endblock %}
+
+<div id="subcategory-list">
+		<div class="line"></div>
+		<div id="subcategory-content"></div>
+	</div>
+
+
+	        

@@ -5,8 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b67cd0c-4431-4d3f-b038-ea36dd3e7eea" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MarketApp/middleware.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/address.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/SP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/cat1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/cat2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/cataloggrey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/catalogred.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/faq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/favorgrey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/favorred.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/goBack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/icongo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/like.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/like_active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/moneygrey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/moneyred.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/ordergrey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/orderred.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/profilegrey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/profilered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/promo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/promo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/img/promo3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/promo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/static/MarketApp/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/templates/MarketApp/authorization.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/templates/MarketApp/favorites.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/templates/MarketApp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/templates/MarketApp/money.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/templates/MarketApp/orders.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/templates/MarketApp/products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/templates/MarketApp/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/templates/MarketApp/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/templates/MarketApp/subcategories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/templates/layout/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketApp/views_template.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketApp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Market/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Market/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarketApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarketApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db2.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db2.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +59,14 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,11 +85,12 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HolMes/repository1/venv/Scripts/python.exe&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HolMes/repository1/MarketApp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -46,6 +99,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HolMes\repository1\MarketApp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HolMes\repository1\MarketApp\templates\layout" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="repository1" type="Python.DjangoServer" factoryName="Django server">
       <module name="repository1" />
@@ -109,7 +170,20 @@
       <workItem from="1735620347993" duration="6496000" />
       <workItem from="1736052173516" duration="1097000" />
       <workItem from="1736061110790" duration="3738000" />
-      <workItem from="1736140748039" duration="4293000" />
+      <workItem from="1736140748039" duration="4669000" />
+      <workItem from="1736228606634" duration="1195000" />
+      <workItem from="1736491935952" duration="161000" />
+      <workItem from="1736492133433" duration="456000" />
+      <workItem from="1736492611658" duration="566000" />
+      <workItem from="1736571936369" duration="1175000" />
+      <workItem from="1737952495481" duration="16000" />
+      <workItem from="1738215617702" duration="122000" />
+      <workItem from="1738297069803" duration="61000" />
+      <workItem from="1739264748828" duration="1242000" />
+      <workItem from="1739329866327" duration="4121000" />
+      <workItem from="1739346382638" duration="4063000" />
+      <workItem from="1739416490769" duration="2997000" />
+      <workItem from="1739435322024" duration="4361000" />
     </task>
     <task id="LOCAL-00001" summary="Django API 2">
       <option name="closed" value="true" />
@@ -295,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736143977901</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Django API 3.1">
+      <option name="closed" value="true" />
+      <created>1736145531379</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1736145531379</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,0 +1,87 @@
+{% load static %}
+<script>
+    const urls = {
+        template_authorization: "{% url 'template_authorization' %}",
+        template_favorites: "{% url 'template_favorites' %}",
+        template_index: "{% url 'template_index' %}",
+        template_money: "{% url 'template_money' %}",
+        template_orders: "{% url 'template_orders' %}",
+        template_products: "{% url 'template_products' %}",
+        template_profile: "{% url 'template_profile' %}",
+        template_register: "{% url 'template_register' %}",
+        template_subcategories: "{% url 'template_subcategories' %}",
+    };
+    const imageSources = JSON.parse('{{ image_sources|safe }}');
+    </script>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnum - {% block title %}Главная{%  endblock %}</title>
+    <link rel="stylesheet" href="{% static 'MarketApp/styles.css' %}">
+    {% block style %}{% endblock %}
+</head>
+<body>
+    {% block loading %}{% endblock %}
+    <div id="dynamic-content" class="fade-in">
+        <div class="header">
+            {% block header %}
+            <img src="{% static 'MarketApp/img/icongo.png' %}">
+            <h2>Supermarket</h2>
+            {% endblock %}
+        </div>
+
+        <div class="main">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+    <div class="footer">
+        <div onclick="loadPage('template_index')">
+            <div id="circleborder">
+                <img src="{% static 'MarketApp/img/cataloggrey.png' %}">
+                <h2>Каталог</h2>
+            </div>
+        </div>
+        <div onclick="loadPage('template_orders')">
+            <div id="circleborder">
+                <img src="{% static 'MarketApp/img/ordergrey.png' %}">
+                <h2>Мои заказы</h2>
+            </div>
+        </div>
+        <div onclick="loadPage('template_favorites')">
+            <div id="circleborder">
+                <img src="{% static 'MarketApp/img/favorgrey.png' %}">
+                <h2>Избранное</h2>
+            </div>
+        </div>
+        <div onclick="loadPage('template_profile')">
+            <div id="circleborder">
+                <img src="{% static 'MarketApp/img/profilegrey.png' %}">
+                <h2>Профиль</h2>
+            </div>
+        </div>
+        <div onclick="loadPage('template_money')">
+            <div id="circleborder">
+                <img src="{% static 'MarketApp/img/moneygrey.png' %}">
+                <h2>120т</h2>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="{% static 'MarketApp/modal.js' %}"></script>
+	<script src="{% static 'MarketApp/search.js' %}"></script> 
+    <script src="{% static 'MarketApp/address.js' %}"></script> 
+    <script src="{% static 'MarketApp/promo.js' %}"></script> 
+     <script src="{% static 'MarketApp/app.js' %}"></script>
+     <script src="{% static 'MarketApp/login.js' %}"></script>
+     
+
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends 'layout/basic.html' %}
+{% block title %} Избранное {% endblock %}
+{% block header %} <h1>Избранное</h1> {% endblock %}
+{% block content %}
+<div class="favorites">
+                <!-- Список избранных товаров -->
+            </div>
+            <div class="nofavorites" style="position:relative;top:30%;">
+                <center>
+                    <h1>В избранном пока пусто</h1><br>
+                    <h4>Добавляйте товары в избранное, чтобы они всегда были под рукой!</h4><br>
+                    <div id="backcatalog">
+                        <p>Перейти в каталог</p>
+                    </div>
+                </center>
+            </div>
+{% endblock %}
